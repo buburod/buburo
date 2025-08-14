@@ -18,24 +18,22 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/home.css" />
 
-    <title>BUBURO - Home</title>
+    <title>Buburo</title>
   </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <img src="src/img/brand.png" alt="Logo Buburo" class="hero-logo" />
 
-  <body class="flex-wrapper">
-    <header class="header">
-      <div class="container">
-        <div class="header-content">
-          <img src="src/img/brand.png" alt="buburo brand" />
-        </div>
-      </div>
-    </header>
+        <img src="src/img/lines_top.png" alt="" class="lines-decor top-lines" />
+        <img src="src/img/lines_bottom.png" alt="" class="lines-decor bottom-lines" />
 
-    <section class="section-hero">
-      <div class="container">
-        <div class="hero-description">
+        <div class="hero-content">
           <h1>
+            Hey, I’m Buburo 👋 <span class="hero-line"></span><br />
             I'm a Product Designer with UI & UX skills who love to build powerful and elegant products with 10 years of
             experience in the tech industry.
           </h1>
@@ -43,31 +41,42 @@
       </div>
     </section>
 
-    <section class="section-projects">
-      <div class="container grid grid--2-cols">
-        <a href="pages/webink.html" class="project">
-          <img class="project-image" src="src/img/webink_icon.png" alt="Project 1" />
-          <div class="project-description">
-            <h3>WEBINK</h3>
-            <p>2024</p>
-          </div>
-        </a>
+    <!-- PROJECTS SECTION -->
+    <section class="projects-section">
+      <div class="container">
+        <span class="projects-tag">PROJECTS</span>
+
+        <h2 class="projects-title">Where <span class="highlight">ideas</span> become interfaces</h2>
+
+        <div class="projects-grid">
+          <!-- COMPONENT 1 -->
+          <a href="webink.html" class="project-card">
+            <img src="src/img/webink_project.png" alt="Webink Project" class="project-image" />
+            <div class="project-info">
+              <span class="project-year">2024</span>
+              <h3 class="project-name">Webink</h3>
+            </div>
+            <div class="project-icon">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
+    <!-- FOOTER SECTION -->
     <footer class="footer">
-      <div class="container grid grid--2-cols">
-        <div class="footer-btn">
-          <a class="btn" href="pages/terms.html">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-            Terms and conditions
-          </a>
-        </div>
-        <div class="footer-btn">
-          <a class="btn" href="pages/privacy.html">
-            Privacy and cookies
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </a>
+      <div class="footer-container">
+        <p class="footer-copy">© 2025 BUBURO. ALL RIGHTS RESERVED</p>
+        <div class="footer-links">
+          <div class="footer-link-item">
+            <a href="terms.html">TERMS & CONDITIONS</a>
+            <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon>
+          </div>
+          <div class="footer-link-item">
+            <a href="privacy.html">PRIVACY & COOKIES</a>
+            <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon>
+          </div>
         </div>
       </div>
     </footer>
