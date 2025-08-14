@@ -313,7 +313,6 @@ body {
   width: 100%;
   border-radius: var(--size-md);
   margin-bottom: var(--size-lg);
-  background-color: var(--color-bg);
 }
 
 .project-info {
