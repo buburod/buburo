@@ -1500,24 +1500,6 @@ h4 {
     max-width: 66ch
 }
 
-.install-shortcut {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 18px 20px;
-    background: var(--card);
-    border: 1px solid var(--rule);
-    border-radius: var(--r-md)
-}
-
-.install-shortcut p {
-    margin-top: 4px;
-    color: var(--teal);
-    font-size: 14px
-}
-
-.install-shortcut .btn,
 .webink-install-card .btn {
     flex: none
 }
@@ -1639,7 +1621,10 @@ h4 {
     border-color: #183A30
 }
 
-.manual-source,
+.manual-source{
+    margin-top: 28px;
+}
+
 .install-next {
     margin-top: 28px;
     padding: clamp(20px, 3vw, 28px);
@@ -1699,13 +1684,11 @@ h4 {
 }
 
 @media (max-width: 760px) {
-    .install-shortcut,
     .webink-install-card {
         align-items: stretch;
         flex-direction: column
     }
 
-    .install-shortcut .btn,
     .webink-install-card .btn {
         justify-content: center;
         width: 100%
