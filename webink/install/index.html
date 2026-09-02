@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Install Webink — BuBu-ro</title>
+  <meta name="description"
+        content="How to install Webink on iPhone, iPad or Mac now that it is no longer on the App Store.">
+  <link rel="canonical" href="https://buburo.com/webink/install/">
+  <meta name="theme-color" content="#C6F921" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A1917" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/src/img/brand.png">
+  <link rel="apple-touch-icon" href="/src/img/brand.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BuBu-ro">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://buburo.com/webink/install/">
+  <meta property="og:title" content="Install Webink — BuBu-ro">
+  <meta property="og:description"
+        content="How to install Webink on iPhone, iPad or Mac now that it is no longer on the App Store.">
+  <meta property="og:image" content="https://buburo.com/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Buburo mark on a lime background">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Install Webink — BuBu-ro">
+  <meta name="twitter:description"
+        content="How to install Webink on iPhone, iPad or Mac now that it is no longer on the App Store.">
+  <meta name="twitter:image" content="https://buburo.com/img/og.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <nav class="nav">
+    <a class="nav-brand" href="/" aria-label="Buburo — home"><img src="/src/img/brand.png" alt="Buburo" width="36"
+                                                                  height="36"></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <div class="nav-links" id="navLinks"><a href="/">Home</a><a href="/work/" aria-current="page">Work</a><a
+        href="/about/">About</a><a class="nav-cta" href="mailto:rodrigues.dgm@gmail.com">Get in touch</a></div>
+  </nav>
+</header>
+
+<main id="main" class="cs-page">
+  <div class="wrap cs-head">
+    <div class="cs-id"><img src="/src/img/webink_white.png" alt="" width="58" height="58">
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <h1 style="font-size:clamp(28px,5vw,46px)">Install Webink</h1>
+        <span class="eyebrow">iPhone &amp; iPad &middot; Mac</span></div>
+    </div>
+    <p class="lede">Webink is no longer on the App Store. On iPhone and iPad it installs through SideStore; on Mac it is
+      a direct download. Pick your device.</p>
+    <div class="ptabs" id="ptabs" role="group" aria-label="Your device">
+      <button data-platform="ios" aria-pressed="true">iPhone &amp; iPad</button>
+      <button data-platform="macos" aria-pressed="false">Mac</button>
+    </div>
+  </div>
+
+  <div id="platform" data-platform="ios">
+
+    <!-- ============ iOS ============ -->
+    <div class="plat-ios">
+      <section class="sec" style="border-top:0;padding-top:clamp(20px,4vw,36px)">
+        <div class="wrap">
+          <div class="callout">
+            <h2 style="font-size:19px">How this works</h2>
+            <p>SideStore installs apps using <b>your own</b> free Apple developer certificate &mdash; the same mechanism
+              Xcode uses to put an app on your own device. Apps signed this way expire after <b>7 days</b>, so SideStore
+              re-signs them for you. You only need a computer for the initial setup; after that, refreshing happens on
+              the iPhone itself.</p>
+            <p style="color:var(--muted);font-size:13.5px">Nothing is jailbroken, and your Apple ID password goes to
+              Apple through the installer &mdash; not to me.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="wrap">
+          <div class="sec-head"><span class="eyebrow">Before you start</span>
+            <h2>What you need</h2></div>
+          <div class="reqs">
+            <div class="req"><b>An iPhone or iPad</b><span>iOS or iPadOS 15.0 or later, with a passcode set.</span>
+            </div>
+            <div class="req"><b>An Apple Account</b><span>Your normal Apple ID. A free one is fine.</span></div>
+            <div class="req"><b>Wi-Fi</b><span>Required for installing and for refreshing later.</span></div>
+            <div class="req"><b>A computer, once</b><span>Windows 8+ (64-bit), macOS High Sierra+, or a current Linux distribution. Setup only.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec" id="setup" data-os="mac">
+        <div class="wrap">
+          <div class="sec-head"><span class="eyebrow">Setup</span>
+            <h2>Five steps</h2>
+            <p class="lede">Pick the computer you&rsquo;ll use for the one-time setup. Everything else is identical.</p>
+          </div>
+          <div class="ostabs" id="ostabs" role="group" aria-label="Operating system">
+            <button data-os="mac" aria-pressed="true">macOS</button>
+            <button data-os="win" aria-pressed="false">Windows</button>
+            <button data-os="linux" aria-pressed="false">Linux</button>
+          </div>
+          <div class="steps" style="margin-top:26px">
+            <div class="step">
+              <div class="step-b"><h3>Install LocalDevVPN on the iPhone</h3>
+                <p>Get it from the App Store, open it, and tap <b>Connect</b>. This has to be switched on any time you
+                  install, update or refresh an app in SideStore.</p>
+                <div class="dl-row"><a class="storelink" href="https://apps.apple.com/app/localdevvpn/id6755608044"
+                                       target="_blank" rel="noopener">LocalDevVPN &mdash; App Store
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="M4 12L12 4M6 4h6v6"/>
+                  </svg>
+                </a></div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-b"><h3>Install iloader on your computer</h3>
+                <p class="os-mac">Download the <code>.dmg</code> from SideStore&rsquo;s GitHub releases and drag it to
+                  Applications.</p>
+                <p class="os-win">Windows must be 64-bit. Install iTunes first &mdash; from Apple directly or the
+                  Microsoft Store &mdash; then run the iloader <code>.msi</code> installer.</p>
+                <p class="os-linux">Install <code>usbmuxd</code> from your package manager first, then take the <code>.deb</code>,
+                  <code>.rpm</code> or AppImage build for your distribution.</p>
+                <div class="path os-linux">sudo apt install usbmuxd &nbsp;&nbsp;# or the dnf / pacman equivalent</div>
+                <div class="dl-row os-mac"><a class="storelink"
+                                              href="https://github.com/nab138/iloader/releases/latest/download/iloader-darwin-universal.dmg">iloader
+                  &mdash; .dmg
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="M4 12L12 4M6 4h6v6"/>
+                  </svg>
+                </a></div>
+                <div class="dl-row os-win">
+                  <a class="storelink"
+                     href="https://github.com/nab138/iloader/releases/latest/download/iloader-windows-x64.msi">iloader
+                    &mdash; .msi
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                      <path d="M4 12L12 4M6 4h6v6"/>
+                    </svg>
+                  </a>
+                  <a class="storelink"
+                     href="https://github.com/nab138/iloader/releases/latest/download/iloader-windows-x64.exe">.exe
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                      <path d="M4 12L12 4M6 4h6v6"/>
+                    </svg>
+                  </a>
+                  <a class="storelink" href="https://apps.microsoft.com/store/detail/9PB2MZ1ZMB1S" target="_blank"
+                     rel="noopener">iTunes
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                      <path d="M4 12L12 4M6 4h6v6"/>
+                    </svg>
+                  </a></div>
+                <div class="dl-row os-linux">
+                  <a class="storelink"
+                     href="https://github.com/nab138/iloader/releases/latest/download/iloader-linux-amd64.deb">iloader
+                    &mdash; .deb
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                      <path d="M4 12L12 4M6 4h6v6"/>
+                    </svg>
+                  </a>
+                  <a class="storelink"
+                     href="https://github.com/nab138/iloader/releases/latest/download/iloader-linux-x86_64.rpm">.rpm
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                      <path d="M4 12L12 4M6 4h6v6"/>
+                    </svg>
+                  </a>
+                  <a class="storelink"
+                     href="https://github.com/nab138/iloader/releases/latest/download/iloader-linux-amd64.AppImage">.AppImage
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                      <path d="M4 12L12 4M6 4h6v6"/>
+                    </svg>
+                  </a>
+                  <a class="storelink" href="https://github.com/nab138/iloader/releases/latest" target="_blank"
+                     rel="noopener">ARM builds
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                      <path d="M4 12L12 4M6 4h6v6"/>
+                    </svg>
+                  </a></div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-b"><h3>Install SideStore on the iPhone</h3>
+                <p>Connect the iPhone to the computer with a cable. Open iloader, sign in with your Apple Account,
+                  select your device, and choose <b>Install SideStore (Stable)</b>.</p></div>
+            </div>
+            <div class="step">
+              <div class="step-b"><h3>Trust the certificate</h3>
+                <p>On the iPhone, open <b>Settings &rsaquo; General &rsaquo; VPN &amp; Device Management</b>, tap the
+                  entry named after your Apple Account under Developer App, and tap <b>Trust</b>.</p>
+                <div class="path">Settings &rsaquo; General &rsaquo; VPN &amp; Device Management &rsaquo; Trust</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-b"><h3>Install Webink</h3>
+                <p>Open SideStore, add the Webink source, and install. The cable isn&rsquo;t needed again.</p>
+                <div class="path">Source URL &mdash; to add</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="wrap">
+          <div class="sec-head"><span class="eyebrow">Afterwards</span>
+            <h2>Keeping it installed</h2></div>
+          <div class="body-copy">
+            <p>Apps installed this way expire after seven days. Open SideStore, go to <b>My Apps</b>, and tap the day
+              counter next to Webink to refresh it &mdash; LocalDevVPN needs to be connected. Do it before the counter
+              reaches zero and you never lose your library.</p>
+            <p>If you have a paid Apple Developer account, certificates last a year instead of a week and the three-app
+              limit disappears. With a free account, it is every seven days.</p>
+          </div>
+          <div class="callout" style="margin-top:28px;border-left-color:var(--muted)">
+            <h3>If something goes wrong</h3>
+            <p>SideStore changes its tooling from time to time &mdash; these steps match the official documentation as
+              of September 2026. The current version always lives at <a href="https://docs.sidestore.io" target="_blank"
+                                                                        rel="noopener"><b>docs.sidestore.io</b></a>,
+              which also has the troubleshooting and error-code pages.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ macOS ============ -->
+    <div class="plat-macos">
+      <section class="sec" style="border-top:0;padding-top:clamp(20px,4vw,36px)">
+        <div class="wrap">
+          <div class="callout">
+            <h2 style="font-size:19px">How this works</h2>
+            <p>The Mac version is a normal <code>.dmg</code> download. Drag it to Applications and it is installed
+              &mdash; <b>no account, no VPN, and nothing that expires</b>. Install it once and it keeps working.</p>
+            <p>The one hurdle is the first launch. Webink is not signed with an Apple Developer certificate, so macOS
+              blocks it once and says the app is <b>&ldquo;damaged&rdquo;</b>. It is not damaged &mdash; that is the
+              wording macOS uses for any app it cannot verify. Step 3 clears it, once, permanently.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="wrap">
+          <div class="sec-head"><span class="eyebrow">Before you start</span>
+            <h2>What you need</h2></div>
+          <div class="reqs">
+            <div class="req"><b>A Mac</b><span>macOS 10.15 Catalina or later. Apple Silicon and Intel.</span></div>
+            <div class="req"><b>Admin access</b><span>Needed once, to allow the app on first launch.</span></div>
+            <div class="req"><b>Nothing else</b><span>No Apple ID, no VPN, no refreshing.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="wrap">
+          <div class="sec-head"><span class="eyebrow">Setup</span>
+            <h2>Three steps</h2></div>
+          <div class="steps">
+            <div class="step">
+              <div class="step-b"><h3>Download the .dmg</h3>
+                <p>Open it and drag <b>Webink</b> into the Applications folder, then eject the disk image.</p>
+                <div class="dl-row"><a class="storelink"
+                                       href="https://github.com/buburod/webink-releases/releases/download/20260901/Webink-1.2.2-114.dmg"
+                                       target="_blank" rel="noopener">Download Webink for Mac
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="M4 12L12 4M6 4h6v6"/>
+                  </svg>
+                </a></div>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-b"><h3>Open it once &mdash; it will be blocked</h3>
+                <p>Double-click Webink in Applications. macOS shows <b>&ldquo;Webink is damaged and can&rsquo;t be
+                  opened&rdquo;</b> and offers only to move it to the Bin. Click <b>Cancel</b>. Nothing is wrong with
+                  the download; this happens to every app not signed with a paid Apple certificate.</p></div>
+            </div>
+
+            <div class="step">
+              <div class="step-b"><h3>Allow it, once</h3>
+                <p>Open <b>System Settings &rsaquo; Privacy &amp; Security</b> and scroll down. There is a line saying
+                  Webink was blocked, with an <b>Open Anyway</b> button. Click it and confirm with your password or
+                  Touch&nbsp;ID.</p>
+                <div class="path">System Settings &rsaquo; Privacy &amp; Security &rsaquo; Open Anyway</div>
+                <p style="margin-top:6px">If that line is not there, run this in Terminal instead and then open the app
+                  normally:</p>
+                <div class="path">xattr -dr com.apple.quarantine /Applications/Webink.app</div>
+                <p style="color:var(--muted);font-size:13.5px">Either way you only do this once. After that Webink opens
+                  with a normal double-click, like any other app.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="wrap">
+          <div class="sec-head"><span class="eyebrow">Afterwards</span>
+            <h2>Updating</h2></div>
+          <div class="body-copy">
+            <p>Nothing expires and there is nothing to refresh. When a new version is out, the app tells you &mdash;
+              download the new <code>.dmg</code> and replace the one in Applications.</p>
+            <p>You only have to allow it again if macOS asks, which it usually does not for a version you have already
+              approved.</p>
+          </div>
+          <div class="callout" style="margin-top:28px;border-left-color:var(--muted)">
+            <h3>Why the warning exists</h3>
+            <p>Apple charges an annual fee for the certificate that removes it. Webink is free and not on the App Store,
+              so it ships unsigned rather than passing that cost on. The download comes straight from the project&rsquo;s
+              own releases page &mdash; you can check the source it was built from at any time.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <img src="/src/img/brand.png" alt="" width="36" height="36">
+      <small>&copy; 2026 BUBURO. ALL RIGHTS RESERVED</small>
+    </div>
+    <div class="foot-links">
+      <a href="https://github.com/buburod" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/rod89/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="/terms/">Terms &amp; conditions</a>
+      <a href="/privacy/">Privacy &amp; cookies</a>
+    </div>
+  </div>
+</footer>
+<script src="/js/site.js" defer></script>
+</body>
+</html>

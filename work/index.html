@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — BuBu-ro</title>
+  <meta name="description" content="Every project, one row each — Webink, Azynk and Hygiro.">
+  <link rel="canonical" href="https://buburo.com/work/">
+  <meta name="theme-color" content="#C6F921" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A1917" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/src/img/brand.png">
+  <link rel="apple-touch-icon" href="/src/img/brand.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BuBu-ro">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://buburo.com/work/">
+  <meta property="og:title" content="Work — BuBu-ro">
+  <meta property="og:description" content="Every project, one row each — Webink, Azynk and Hygiro.">
+  <meta property="og:image" content="https://buburo.com/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Buburo mark on a lime background">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Work — BuBu-ro">
+  <meta name="twitter:description" content="Every project, one row each — Webink, Azynk and Hygiro.">
+  <meta name="twitter:image" content="https://buburo.com/img/og.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <nav class="nav">
+    <a class="nav-brand" href="/" aria-label="Buburo — home"><img src="/src/img/brand.png" alt="Buburo" width="36"
+                                                                  height="36"></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <div class="nav-links" id="navLinks"><a href="/">Home</a><a href="/work/" aria-current="page">Work</a><a
+        href="/about/">About</a><a class="nav-cta" href="mailto:rodrigues.dgm@gmail.com">Get in touch</a></div>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="sec" style="border-top:0;padding-top:clamp(28px,5vw,56px)">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Index &mdash; 3 projects</span>
+        <h1 style="font-size:clamp(30px,5.5vw,52px);font-weight:800">Everything I&rsquo;ve built</h1>
+        <p class="lede">Live apps and work in progress, with the stack behind each one. Filter by type to narrow the
+          list.</p>
+      </div>
+      <div class="filters" id="filters">
+        <button class="chip" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="mobile" aria-pressed="false">Mobile app</button>
+        <button class="chip" data-filter="web" aria-pressed="false">Web</button>
+        <button class="chip" data-filter="experiment" aria-pressed="false">Experiment</button>
+      </div>
+      <div class="tbl-scroll">
+        <table class="tbl">
+          <thead>
+          <tr>
+            <th>Year</th>
+            <th>Project</th>
+            <th class="col-type">Type</th>
+            <th class="col-role">Role</th>
+            <th class="col-stack">Stack</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+          </thead>
+          <tbody id="projRows">
+          <tr class="is-link" data-type="mobile">
+            <td class="t-yr">2024</td>
+            <td class="t-name"><a href="/webink/"><img class="thumb" src="/img/webink-mark.png" alt="" width="32"
+                                                       height="32">Webink</a></td>
+            <td class="col-type">Mobile app</td>
+            <td class="col-role">Design &amp; code</td>
+            <td class="t-stack col-stack">Flutter &middot; Rust &middot; Firebase</td>
+            <td><span class="pill lime">Live</span></td>
+            <td class="t-go"><span aria-hidden="true">&#8599;</span></td>
+          </tr>
+          <tr class="no-link" data-type="web">
+            <td class="t-yr">2025</td>
+            <td class="t-name"><span class="plain"><img class="thumb" src="/img/azynk.png" alt="" width="32"
+                                                        height="32">Azynk</span></td>
+            <td class="col-type">Web platform</td>
+            <td class="col-role">Design &amp; code</td>
+            <td class="t-stack col-stack">React &middot; TS &middot; Kotlin &middot; Postgres</td>
+            <td><span class="pill">In progress</span></td>
+            <td class="t-go"></td>
+          </tr>
+          <tr class="no-link" data-type="experiment">
+            <td class="t-yr">2026</td>
+            <td class="t-name"><span class="plain"><img class="thumb" src="/img/hygiro.png" alt="" width="32"
+                                                        height="32">Hygiro</span></td>
+            <td class="col-type">Trading system</td>
+            <td class="col-role">Code</td>
+            <td class="t-stack col-stack">Python &middot; Docker &middot; React</td>
+            <td><span class="pill">In progress</span></td>
+            <td class="t-go"></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <img src="/src/img/brand.png" alt="" width="36" height="36">
+      <small>&copy; 2026 BUBURO. ALL RIGHTS RESERVED</small>
+    </div>
+    <div class="foot-links">
+      <a href="https://github.com/buburod" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/rod89/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="/terms/">Terms &amp; conditions</a>
+      <a href="/privacy/">Privacy &amp; cookies</a>
+    </div>
+  </div>
+</footer>
+<script src="/js/site.js" defer></script>
+</body>
+</html>

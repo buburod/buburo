@@ -1,0 +1,46 @@
+{
+  "name": "Buburo",
+  "identifier": "com.buburo.source",
+  "subtitle": "Apps by Buburo",
+  "description": "Source for Webink and other apps by Buburo.",
+  "website": "https://buburo.com",
+  "iconURL": "https://buburo.com/src/img/brand.png",
+  "tintColor": "0F9E90",
+  "apps": [
+    {
+      "name": "Webink",
+      "bundleIdentifier": "com.buburo.webink",
+      "developerName": "Buburo",
+      "subtitle": "One library across eleven manga sources",
+      "localizedDescription": "Eleven manga sites, one library.\n\nWebink aggregates manga sources behind a single interface and keeps your place. Trending and latest releases on the home screen, search scoped to a source or to your own library, and a shelf where every title carries a status, a ranking and a chapter position.\n\nProgress is stored on device and syncs to the cloud once you sign in, so a new phone picks up where the old one stopped. Sign-in is optional — the app is fully usable without an account.\n\nWebink hosts nothing. It is an interface onto content the sources already publish.",
+      "iconURL": "https://buburo.com/src/img/webink_white.png",
+      "tintColor": "0F9E90",
+      "category": "entertainment",
+      "screenshots": [
+        "https://buburo.com/img/webink-1.webp",
+        "https://buburo.com/img/webink-2.webp",
+        "https://buburo.com/img/webink-3.webp",
+        "https://buburo.com/img/webink-4.webp"
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSUserTrackingUsageDescription": "Used to measure how the app is performing."
+        }
+      },
+      "downloadURL": "https://github.com/buburod/webink-releases/releases/download/20260901/Webink-1.2.2-114.ipa",
+      "versions": [
+        {
+          "version": "1.2.2",
+          "buildVersion": "114",
+          "date": "2026-09-01",
+          "localizedDescription": "Fixed chapter navigation scrolling on tablets\nUpdated dependencies\nFixed Remote Config to support editable store URL\nBug fixes and maintenance improvements",
+          "downloadURL": "https://github.com/buburod/webink-releases/releases/download/20260901/Webink-1.2.2-114.ipa",
+          "size": 35213457,
+          "minOSVersion": "15.0"
+        }
+      ]
+    }
+  ],
+  "news": []
+}

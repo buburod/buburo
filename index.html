@@ -1,84 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Buburo portfolio" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuBu-ro — Product Designer & Developer</title>
+  <meta name="description"
+        content="Portfolio of Bruno Rodrigues (Buburo) — product designer and developer. Webink, Azynk and Hygiro.">
+  <link rel="canonical" href="https://buburo.com/">
+  <meta name="theme-color" content="#C6F921" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A1917" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/src/img/brand.png">
+  <link rel="apple-touch-icon" href="/src/img/brand.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BuBu-ro">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://buburo.com/">
+  <meta property="og:title" content="BuBu-ro — Product Designer & Developer">
+  <meta property="og:description"
+        content="Portfolio of Bruno Rodrigues (Buburo) — product designer and developer. Webink, Azynk and Hygiro.">
+  <meta property="og:image" content="https://buburo.com/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Buburo mark on a lime background">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BuBu-ro — Product Designer & Developer">
+  <meta name="twitter:description"
+        content="Portfolio of Bruno Rodrigues (Buburo) — product designer and developer. Webink, Azynk and Hygiro.">
+  <meta name="twitter:image" content="https://buburo.com/img/og.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Bruno Rodrigues",
+    "alternateName": "BuBu-ro",
+    "url": "https://buburo.com",
+    "image": "https://buburo.com/img/og.png",
+    "jobTitle": "Product Designer & Developer",
+    "address": {
+      "@type": "PostalPlace",
+      "addressLocality": "Lisbon",
+      "addressCountry": "PT"
+    },
+    "sameAs": [
+      "https://github.com/buburod",
+      "https://www.linkedin.com/in/rod89/"
+    ],
+    "knowsAbout": [
+      "Product design",
+      "UI/UX",
+      "Design systems",
+      "Flutter",
+      "Dart",
+      "React",
+      "TypeScript",
+      "Kotlin",
+      "Python",
+      "Rust"
+    ]
+  }</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <nav class="nav">
+    <a class="nav-brand" href="/" aria-label="Buburo — home"><img src="/src/img/brand.png" alt="Buburo" width="36"
+                                                                  height="36"></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <div class="nav-links" id="navLinks"><a href="/" aria-current="page">Home</a><a href="/work/">Work</a><a
+        href="/about/">About</a><a class="nav-cta" href="mailto:rodrigues.dgm@gmail.com">Get in touch</a></div>
+  </nav>
+</header>
 
-    <link rel="icon" href="src/img/brand.png" />
-    <link rel="apple-touch-icon" href="src/img/brand.png" />
+<main id="main">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet" />
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <link rel="stylesheet" href="css/home.css" />
-
-    <title>BuBu-ro</title>
-  </head>
-  <body>
-    <!-- HEADER SECTION -->
-    <section class="hero-section">
-      <div class="hero-container">
-        <img src="src/img/brand.png" alt="Logo Buburo" class="hero-logo" />
-
-        <img src="src/img/lines_top.png" alt="" class="lines-decor top-lines" />
-        <img src="src/img/lines_bottom.png" alt="" class="lines-decor bottom-lines" />
-
-        <div class="hero-content">
-          <h1>
-            Hey, I’m BuBu-ro 👋 <span class="hero-line"></span><br />
-            I'm a Product Designer with UI & UX skills who love to build powerful and elegant products with 10 years of
-            experience in the tech industry.
-          </h1>
-        </div>
+  <section class="hero">
+    <div class="hero-inner">
+      <img src="/src/img/lines_top.png" alt="" class="deco deco-top">
+      <img src="/src/img/lines_bottom.png" alt="" class="deco deco-bottom">
+      <div class="hero-text">
+        <span class="eyebrow">Bruno Rodrigues &mdash; Buburo</span>
+        <h1>I design the interface, then I <em>build</em> it.</h1>
+        <p>Product designer with UI &amp; UX craft and fourteen years in the tech industry. I take products from the
+          first sketch to a signed binary in someone&rsquo;s hands &mdash; the design system and the code that ships
+          them.</p>
       </div>
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <section class="projects-section">
-      <div class="container">
-        <span class="projects-tag">PROJECTS</span>
-
-        <h2 class="projects-title">Where <span class="highlight">ideas</span> become interfaces</h2>
-
-        <div class="projects-grid">
-          <!-- COMPONENT 1 -->
-          <a href="webink.html" class="project-card">
-            <img src="src/img/webink_project.png" alt="Webink Project" class="project-image" />
-            <div class="project-info">
-              <span class="project-year">2024</span>
-              <h3 class="project-name">Webink</h3>
-            </div>
-            <div class="project-icon">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
-          </a>
-        </div>
+      <div class="hero-meta">
+        <span class="pill">Product design</span><span class="pill">UI &amp; UX</span>
+        <span class="pill">Design systems</span><span class="pill">Flutter</span>
+        <span class="pill">React</span><span class="pill">Kotlin</span>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FOOTER SECTION -->
-    <footer class="footer">
-      <div class="footer-container">
-        <p class="footer-copy">© 2025 BUBURO. ALL RIGHTS RESERVED</p>
-        <div class="footer-links">
-          <div class="footer-link-item">
-            <a href="terms.html">TERMS & CONDITIONS</a>
-            <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon>
+  <div class="stat-strip">
+    <div class="stat-strip-in">
+      <div class="stat"><b>14</b><span>Years in tech</span></div>
+      <div class="stat"><b>3</b><span>Active projects</span></div>
+      <div class="stat"><b>6</b><span>Languages shipped</span></div>
+      <div class="stat"><b>3</b><span>Platforms live</span></div>
+    </div>
+  </div>
+
+  <section class="sec" style="border-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Selected work</span>
+        <h2>Where ideas become interfaces</h2>
+        <p class="lede">A manga reader on three app stores, a multi-tenant ERP platform, and an autonomous trading
+          system. Different problems &mdash; the same person doing the design and the build.</p>
+      </div>
+
+      <div class="work-grid">
+        <a class="proj feat" href="/webink/">
+          <div class="proj-cover" style="background:#12564F">
+            <img class="cover-bg" src="/img/webink-card.webp" alt="" width="1440" height="800" loading="lazy"
+                 decoding="async">
+            <img class="badge bare" src="/img/webink-mark.png" alt="" width="88" height="88">
           </div>
-          <div class="footer-link-item">
-            <a href="privacy.html">PRIVACY & COOKIES</a>
-            <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon>
+          <div class="proj-body">
+            <div class="proj-title"><h3>Webink</h3><span class="yr">2024 &mdash; ongoing</span>
+              <span class="proj-arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"
+                                            aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg></span></div>
+            <p>A manga reader that pulls from eleven sources and makes them feel like one library. Designed, built and
+              shipped solo &mdash; interface, source adapters and release pipeline.</p>
+            <div class="proj-tags"><span class="pill design">Design</span><span class="pill code">Code</span>
+              <span class="pill plat">iOS</span><span class="pill plat">Android</span><span
+                  class="pill plat">macOS</span>
+              <span class="pill lime">Live</span></div>
           </div>
-        </div>
+        </a>
+
+        <a class="proj" href="/work/">
+          <div class="proj-cover" style="background:#29C3FF">
+            <img class="cover-bg" src="/img/azynk-card.webp" alt="" width="1440" height="800" loading="lazy"
+                 decoding="async">
+            <img class="badge" src="/img/azynk.png" alt="" width="76" height="76">
+          </div>
+          <div class="proj-body">
+            <div class="proj-title"><h3>Azynk</h3><span class="yr">In development</span>
+              <span class="proj-arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"
+                                            aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg></span></div>
+            <p>A multi-tenant ERP and CRM platform. React and TypeScript front-end monorepo &mdash; auth, app and
+              back-office &mdash; on a Kotlin and Spring Boot back-end with PostgreSQL.</p>
+            <div class="proj-tags"><span class="pill design">Design</span><span class="pill code">Code</span>
+              <span class="pill plat">Web</span><span class="pill">In progress</span></div>
+          </div>
+        </a>
+
+        <a class="proj" href="/work/">
+          <div class="proj-cover" style="background:#F2F1E2">
+            <img class="cover-bg" src="/img/hygiro-card.webp" alt="" width="1440" height="800" loading="lazy"
+                 decoding="async">
+            <img class="badge" src="/img/hygiro.png" alt="" width="76" height="76">
+          </div>
+          <div class="proj-body">
+            <div class="proj-title"><h3>Hygiro</h3><span class="yr">In development</span>
+              <span class="proj-arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"
+                                            aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg></span></div>
+            <p>A private, local-first autonomous trading system. Python, running paper-only while the decision, risk and
+              reconciliation pipeline builds up evidence.</p>
+            <div class="proj-tags"><span class="pill code">Code</span><span class="pill plat">Local</span>
+              <span class="pill">In progress</span></div>
+          </div>
+        </a>
       </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+
+</main>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <img src="/src/img/brand.png" alt="" width="36" height="36">
+      <small>&copy; 2026 BUBURO. ALL RIGHTS RESERVED</small>
+    </div>
+    <div class="foot-links">
+      <a href="https://github.com/buburod" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/rod89/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="/terms/">Terms &amp; conditions</a>
+      <a href="/privacy/">Privacy &amp; cookies</a>
+    </div>
+  </div>
+</footer>
+<script src="/js/site.js" defer></script>
+</body>
 </html>

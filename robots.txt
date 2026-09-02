@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://buburo.com/sitemap.xml
