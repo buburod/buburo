@@ -170,6 +170,54 @@
     });
   }
 
+  /* ---- install page: copyable commands and URLs ---- */
+  const copyButtons = document.querySelectorAll('[data-copy]');
+
+  if (copyButtons.length) {
+    function copyText(value) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(value);
+      }
+
+      const helper = document.createElement('textarea');
+      helper.value = value;
+      helper.setAttribute('readonly', '');
+      helper.style.position = 'fixed';
+      helper.style.opacity = '0';
+      document.body.appendChild(helper);
+      helper.select();
+
+      let copied = false;
+      try {
+        copied = document.execCommand('copy');
+      } finally {
+        helper.remove();
+      }
+
+      return copied ? Promise.resolve() : Promise.reject(new Error('Copy unavailable'));
+    }
+
+    copyButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        const originalLabel = button.textContent;
+
+        copyText(button.dataset.copy).then(function () {
+          button.textContent = 'Copied';
+          button.setAttribute('data-copied', 'true');
+          window.setTimeout(function () {
+            button.textContent = originalLabel;
+            button.removeAttribute('data-copied');
+          }, 1600);
+        }).catch(function () {
+          button.textContent = 'Select text';
+          window.setTimeout(function () {
+            button.textContent = originalLabel;
+          }, 1600);
+        });
+      });
+    });
+  }
+
   /* ---- work index filter ---- */
   const filters = document.getElementById('filters');
   const rows = document.getElementById('projRows');
