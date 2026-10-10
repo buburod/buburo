@@ -1621,6 +1621,21 @@ h4 {
     border-color: #183A30
 }
 
+#install-webink .webink-source-cta {
+    background: var(--lime);
+    color: #0B231D;
+    border-color: var(--lime)
+}
+
+#install-webink .webink-source-cta:hover {
+    background: var(--lime-deep);
+    border-color: var(--lime-deep)
+}
+
+#install-webink .webink-source-complete {
+    margin-top: 18px
+}
+
 .manual-source{
     margin-top: 28px;
 }
@@ -1745,6 +1760,12 @@ h4 {
     margin-top: 4px
 }
 
+/* Let long download labels wrap on narrow step cards instead of widening the page. */
+.dl-row .storelink {
+    max-width: 100%;
+    white-space: normal
+}
+
 .req {
     background: var(--paper);
     padding: 18px 20px;
@@ -1791,6 +1812,25 @@ h4 {
     transition: all .2s
 }
 
+.install-guide-tabs .install-tab-label-short {
+    display: none
+}
+
+/* Use compact installation-tab labels on narrow phones so both tabs fit on one row. */
+@media (max-width: 350px) {
+    .install-guide-tabs button {
+        padding-inline: 16px
+    }
+
+    .install-guide-tabs .install-tab-label-full {
+        display: none
+    }
+
+    .install-guide-tabs .install-tab-label-short {
+        display: inline
+    }
+}
+
 .ptabs button:hover {
     color: var(--ink)
 }
@@ -1801,6 +1841,16 @@ h4 {
 }
 
 [data-platform="ios"] .plat-macos, [data-platform="macos"] .plat-ios {
+    display: none
+}
+
+/* iOS guide tabs show one installation panel after JavaScript initializes. */
+.install-guide-controls {
+    padding-bottom: 24px
+}
+
+.install-guide[data-active-step="sidestore"] [data-install-panel="webink"],
+.install-guide[data-active-step="webink"] [data-install-panel="sidestore"] {
     display: none
 }
 

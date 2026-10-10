@@ -36,6 +36,7 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<!-- Shared site navigation; both installation guides use this page shell. -->
 <header>
   <nav class="nav">
     <a class="nav-brand" href="/" aria-label="Buburo home"><img src="/src/img/brand.png" alt="Buburo" width="36"
@@ -47,6 +48,7 @@
 </header>
 
 <main id="main" class="cs-page">
+  <!-- Shared intro and device tabs. The selected tab is reflected by #ios or #macos. -->
   <div class="wrap cs-head">
     <div class="cs-id"><img src="/src/img/webink_white.png" alt="" width="58" height="58">
       <div style="display:flex;flex-direction:column;gap:4px">
@@ -63,29 +65,11 @@
 
   <div id="platform" data-platform="ios">
 
-    <!-- ============ iOS ============ -->
+    <!-- iPhone and iPad guide. The setup section below has separate computer OS tabs. -->
     <div class="plat-ios">
-      <section class="sec" data-os="mac">
-        <div class="wrap">
-          <div class="sec-head"><span class="eyebrow">Instructions</span>
-            <h2>How this works</h2>
-            <p class="lede">SideStore is free and lets you install Webink on your iPhone or iPad with your own Apple
-              Account. A computer is needed for the first setup. After that, SideStore can refresh the app from the
-              device.</p>
-            <p class="lede">With a free Apple Account, the signing period is normally <b>7 days</b>. SideStore refreshes
-              the app before it expires, but a computer may occasionally be needed again if the device pairing needs to
-              be
-              repaired.</p>
-            <p class="lede"><a href="#install-webink">If you already have SideStore installed and configured, skip ahead
-              to Phase 3.</a></p>
-          </div>
-        </div>
-      </section>
-
-
       <section class="sec">
         <div class="wrap">
-          <div class="sec-head"><span class="eyebrow">Phase 1 · Before you start</span>
+          <div class="sec-head"><span class="eyebrow">Before you start</span>
             <h2>What you need</h2></div>
           <div class="reqs">
             <div class="req"><b>iPhone or iPad</b><span>iOS or iPadOS 15.0 or later, with a passcode enabled.</span>
@@ -101,238 +85,247 @@
         </div>
       </section>
 
-      <section class="sec" id="setup" data-os="mac">
+      <section class="sec">
         <div class="wrap">
-          <div class="sec-head"><span class="eyebrow">Phase 2 · Install SideStore</span>
-            <h2>Set up SideStore</h2>
-            <p class="lede">Choose the computer you&rsquo;ll use for the one-time setup. The final steps happen on your
-              iPhone or iPad.</p>
+          <div class="sec-head"><span class="eyebrow">Instructions</span>
+            <h2>How this works</h2>
+            <p class="lede">To install Webink on your iPhone or iPad, first install SideStore, a free alternative app
+              store. The process has two parts:</p>
+            </br>
+            <p class="lede"><b>1. Install SideStore (first time only)</b></p>
+            <p class="lede">You&rsquo;ll need your Apple Account, a computer, and your iPhone or iPad. You only need to
+              complete this setup once. If SideStore is already installed and working on your device, choose
+              <b>Install Webink</b> below.</p>
+            </br>
+            <p class="lede"><b>2. Install Webink</b></p>
+            <p class="lede">Once SideStore is set up, add the Webink source URL to SideStore, then tap
+              <b>Install</b>. You don&rsquo;t need a computer for this step.</p>
           </div>
-          <div class="ostabs" id="ostabs" role="group" aria-label="Operating system">
-            <button type="button" data-os="mac" aria-pressed="true">macOS</button>
-            <button type="button" data-os="win" aria-pressed="false">Windows</button>
-            <button type="button" data-os="linux" aria-pressed="false">Linux</button>
+        </div>
+
+
+        <!-- These guide tabs switch between the one-time SideStore setup and installing Webink. -->
+        <div class="install-guide" id="installGuide">
+          <div class="wrap install-guide-controls">
+            <div class="ptabs install-guide-tabs" id="installGuideTabs" role="group"
+                 aria-label="Installation steps">
+              <button type="button" data-install-step="sidestore" aria-pressed="true" aria-controls="setup"
+                      aria-label="Install SideStore">
+                <span class="install-tab-label-full">Install SideStore</span>
+                <span class="install-tab-label-short">SideStore</span>
+              </button>
+              <button type="button" data-install-step="webink" aria-pressed="false"
+                      aria-controls="install-webink" aria-label="Install Webink">
+                <span class="install-tab-label-full">Install Webink</span>
+                <span class="install-tab-label-short">Webink</span>
+              </button>
+            </div>
           </div>
-          <div class="steps" style="margin-top:26px">
-            <div class="step">
-              <div class="step-b"><span class="device-label">On your iPhone or iPad</span>
-                <h3>Install LocalDevVPN</h3>
-                <p>Install LocalDevVPN, open it, and tap <b>Connect</b>. This is a small local VPN that lets SideStore
-                  talk to your device. Keep it connected whenever you install, update, or refresh an app.</p>
-                <div class="dl-row"><a class="storelink" href="https://apps.apple.com/app/localdevvpn/id6755608044"
-                                       target="_blank" rel="noopener">Get LocalDevVPN from the App Store
-                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                    <path d="M4 12L12 4M6 4h6v6"/>
-                  </svg>
-                </a></div>
+
+          <!-- One-time SideStore setup; the nested tabs switch the computer instructions only. -->
+          <section class="sec" id="setup" data-os="mac" data-install-panel="sidestore">
+            <div class="wrap">
+              <div class="sec-head">
+                <p class="lede">Choose your computer&rsquo;s operating system below and follow the steps to install
+                  SideStore on your device. <b>Developer Mode</b> must be enabled on your device before you begin.</p>
+                <p class="lede"> If you need additional information, you can also consult the <a
+                    href="https://docs.sidestore.io/docs/intro" target="_blank" rel="noopener">SideStore
+                  documentation</a>.
+                </p>
+              </div>
+              <div class="ostabs" id="ostabs" role="group" aria-label="Operating system">
+                <button type="button" data-os="mac" aria-pressed="true">macOS</button>
+                <button type="button" data-os="win" aria-pressed="false">Windows</button>
+                <button type="button" data-os="linux" aria-pressed="false">Linux</button>
+              </div>
+              <div class="steps" style="margin-top:26px">
+                <div class="step">
+                  <div class="step-b"><span class="device-label">On your computer</span>
+                    <h3>Install iloader</h3>
+                    <p class="os-mac">Download iloader for macOS, open the <code>.dmg</code>, and drag it to
+                      Applications.
+                    </p>
+                    <p class="os-win">Windows must be 64-bit. Install iTunes first, then run the iloader
+                      <code>.msi</code>
+                      installer. The <code>.msi</code> is recommended over the <code>.exe</code>.</p>
+                    <p class="os-linux">Install <code>usbmuxd</code> first, then install the iloader package for your
+                      distribution.</p>
+                    <div class="command-block os-linux">
+                      <div class="code-label">Run in Terminal on your computer</div>
+                      <div class="command-line"><code>sudo apt install usbmuxd</code>
+                        <button class="copy-btn" type="button" data-copy="sudo apt install usbmuxd"
+                                aria-label="Copy usbmuxd install command">Copy
+                        </button>
+                      </div>
+                      <small>For another distribution, use its package manager as described in the official
+                        guide.</small>
+                    </div>
+                    <div class="dl-row os-mac"><a class="storelink"
+                                                  href="https://github.com/nab138/iloader/releases/latest/download/iloader-darwin-universal.dmg"
+                                                  target="_blank" rel="noopener">Download iloader for macOS
+                      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                        <path d="M4 12L12 4M6 4h6v6"/>
+                      </svg>
+                    </a></div>
+                    <div class="dl-row os-win">
+                      <a class="storelink"
+                         href="https://github.com/nab138/iloader/releases/latest/download/iloader-windows-x64.msi"
+                         target="_blank" rel="noopener">Download iloader .msi
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"
+                             aria-hidden="true">
+                          <path d="M4 12L12 4M6 4h6v6"/>
+                        </svg>
+                      </a>
+                      <a class="storelink"
+                         href="https://github.com/nab138/iloader/releases/latest/download/iloader-windows-x64.exe"
+                         target="_blank" rel="noopener">Download iloader .exe
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"
+                             aria-hidden="true">
+                          <path d="M4 12L12 4M6 4h6v6"/>
+                        </svg>
+                      </a>
+                      <a class="storelink" href="https://apps.microsoft.com/store/detail/9PB2MZ1ZMB1S" target="_blank"
+                         rel="noopener">Get iTunes
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"
+                             aria-hidden="true">
+                          <path d="M4 12L12 4M6 4h6v6"/>
+                        </svg>
+                      </a></div>
+                    <div class="dl-row os-linux">
+                      <a class="storelink"
+                         href="https://github.com/nab138/iloader/releases/latest/download/iloader-linux-amd64.deb"
+                         target="_blank" rel="noopener">Download iloader .deb
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"
+                             aria-hidden="true">
+                          <path d="M4 12L12 4M6 4h6v6"/>
+                        </svg>
+                      </a>
+                      <a class="storelink"
+                         href="https://github.com/nab138/iloader/releases/latest/download/iloader-linux-x86_64.rpm"
+                         target="_blank" rel="noopener">Download iloader .rpm
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"
+                             aria-hidden="true">
+                          <path d="M4 12L12 4M6 4h6v6"/>
+                        </svg>
+                      </a>
+                      <a class="storelink"
+                         href="https://github.com/nab138/iloader/releases/latest/download/iloader-linux-amd64.AppImage"
+                         target="_blank" rel="noopener">Download iloader AppImage
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"
+                             aria-hidden="true">
+                          <path d="M4 12L12 4M6 4h6v6"/>
+                        </svg>
+                      </a>
+                      <a class="storelink" href="https://github.com/nab138/iloader/releases/latest" target="_blank"
+                         rel="noopener">ARM builds
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"
+                             aria-hidden="true">
+                          <path d="M4 12L12 4M6 4h6v6"/>
+                        </svg>
+                      </a></div>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-b"><span class="device-label">On your iPhone or iPad</span>
+                    <h3>Install LocalDevVPN</h3>
+                    <p>Install LocalDevVPN, open it, and tap <b>Connect</b>. This is a small local VPN that lets
+                      SideStore
+                      talk to your device. Keep it connected whenever you install, update, or refresh an app.</p>
+                    <div class="dl-row"><a class="storelink" href="https://apps.apple.com/app/localdevvpn/id6755608044"
+                                           target="_blank" rel="noopener">Get LocalDevVPN from the App Store
+                      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                        <path d="M4 12L12 4M6 4h6v6"/>
+                      </svg>
+                    </a></div>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-b"><span class="device-label">On your computer and device</span>
+                    <h3>Install SideStore</h3>
+                    <p>Open iloader and sign in with the same Apple Account you use on your device.</p>
+                    <p>Unlock your iPhone or iPad and keep it unlocked during the installation. Connect it to your
+                      computer using a USB cable, then click <b>Install SideStore (Stable)</b> in iloader.</p>
+                    <p>During the process, a prompt may appear on your device asking you to trust the computer. Tap
+                      <b>Trust</b> and enter your device passcode if requested. Once the installation is complete,
+                      SideStore should appear on your device.</p>
+                    <p>If you see an “Untrusted Developer” message when opening SideStore, go to:</p>
+                    <div class="path">Settings › General › VPN &amp; Device Management › Developer App</div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="step">
-              <div class="step-b"><span class="device-label">On your computer</span>
-                <h3>Install iloader</h3>
-                <p class="os-mac">Download iloader for macOS, open the <code>.dmg</code>, and drag it to Applications.
-                </p>
-                <p class="os-win">Windows must be 64-bit. Install iTunes first, then run the iloader <code>.msi</code>
-                  installer. The <code>.msi</code> is recommended over the <code>.exe</code>.</p>
-                <p class="os-linux">Install <code>usbmuxd</code> first, then install the iloader package for your
-                  distribution.</p>
-                <div class="command-block os-linux">
-                  <div class="code-label">Run in Terminal on your computer</div>
-                  <div class="command-line"><code>sudo apt install usbmuxd</code>
-                    <button class="copy-btn" type="button" data-copy="sudo apt install usbmuxd"
-                            aria-label="Copy usbmuxd install command">Copy
+          </section>
+
+          <!-- Add Webink to SideStore. Later refresh/update sections stay outside these tabs. -->
+          <section class="sec" id="install-webink" data-install-panel="webink">
+            <div class="wrap">
+              <div class="sec-head">
+                <p class="lede">Now that LocalDevVPN is connected and SideStore is installed, open this page on your
+                  iPhone or iPad and tap the button below. It will add Webink to SideStore, where you can install
+                  it.</p>
+              </div>
+              <a class="btn webink-source-cta" href="sidestore://source?url=https://buburo.com/webink/source.json">
+                Add Webink to SideStore
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M4 12L12 4M6 4h6v6"/>
+                </svg>
+              </a>
+              <div class="manual-source">
+                <p class="lede">If the button doesn't work. Open SideStore, go to Sources, tap + or Add Source, and add
+                  the
+                  URL below.</p>
+                <div class="url-block">
+                  <div class="code-label">Webink Source URL</div>
+                  <div class="url-line"><code>https://buburo.com/webink/source.json</code>
+                    <button class="copy-btn" type="button" data-copy="https://buburo.com/webink/source.json"
+                            aria-label="Copy Webink source URL">Copy
                     </button>
                   </div>
-                  <small>For another distribution, use its package manager as described in the official guide.</small>
                 </div>
-                <div class="dl-row os-mac"><a class="storelink"
-                                              href="https://github.com/nab138/iloader/releases/latest/download/iloader-darwin-universal.dmg"
-                                              target="_blank" rel="noopener">Download iloader for macOS
-                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                    <path d="M4 12L12 4M6 4h6v6"/>
-                  </svg>
-                </a></div>
-                <div class="dl-row os-win">
-                  <a class="storelink"
-                     href="https://github.com/nab138/iloader/releases/latest/download/iloader-windows-x64.msi"
-                     target="_blank" rel="noopener">Download iloader .msi
-                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                      <path d="M4 12L12 4M6 4h6v6"/>
-                    </svg>
-                  </a>
-                  <a class="storelink"
-                     href="https://github.com/nab138/iloader/releases/latest/download/iloader-windows-x64.exe"
-                     target="_blank" rel="noopener">Download iloader .exe
-                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                      <path d="M4 12L12 4M6 4h6v6"/>
-                    </svg>
-                  </a>
-                  <a class="storelink" href="https://apps.microsoft.com/store/detail/9PB2MZ1ZMB1S" target="_blank"
-                     rel="noopener">Get iTunes
-                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                      <path d="M4 12L12 4M6 4h6v6"/>
-                    </svg>
-                  </a></div>
-                <div class="dl-row os-linux">
-                  <a class="storelink"
-                     href="https://github.com/nab138/iloader/releases/latest/download/iloader-linux-amd64.deb"
-                     target="_blank" rel="noopener">Download iloader .deb
-                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                      <path d="M4 12L12 4M6 4h6v6"/>
-                    </svg>
-                  </a>
-                  <a class="storelink"
-                     href="https://github.com/nab138/iloader/releases/latest/download/iloader-linux-x86_64.rpm"
-                     target="_blank" rel="noopener">Download iloader .rpm
-                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                      <path d="M4 12L12 4M6 4h6v6"/>
-                    </svg>
-                  </a>
-                  <a class="storelink"
-                     href="https://github.com/nab138/iloader/releases/latest/download/iloader-linux-amd64.AppImage"
-                     target="_blank" rel="noopener">Download iloader AppImage
-                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                      <path d="M4 12L12 4M6 4h6v6"/>
-                    </svg>
-                  </a>
-                  <a class="storelink" href="https://github.com/nab138/iloader/releases/latest" target="_blank"
-                     rel="noopener">ARM builds
-                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                      <path d="M4 12L12 4M6 4h6v6"/>
-                    </svg>
-                  </a></div>
+                </br>
+                <p class="lede webink-source-complete">Once the Webink source has been added, open it and tap
+                  Install.</p>
               </div>
             </div>
-            <div class="step">
-              <div class="step-b"><span class="device-label">On your computer</span>
-                <h3>Install SideStore</h3>
-                <p>Connect your iPhone or iPad to the computer with a USB cable. If asked, trust the computer on the
-                  device and enter your passcode. Open iloader, sign in with the Apple Account you want to use, select
-                  your device, and choose <b>Install SideStore (Stable)</b>.</p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step-b"><span class="device-label">On your iPhone or iPad</span>
-                <h3>Trust SideStore and enable Developer Mode</h3>
-                <p>Open Settings, go to VPN &amp; Device Management, and under <b>Developer App</b> tap the entry named
-                  after your Apple Account. Tap <b>Trust</b>, then confirm with your passcode.</p>
-                <div class="path">Settings › General › VPN &amp; Device Management › Developer App › Trust</div>
-                <p>Next go to <b>Settings › Privacy &amp; Security</b>, scroll to the bottom, and turn on <b>Developer
-                  Mode</b>. Your device will restart.</p>
-                <p class="checkpoint"><b>Checkpoint:</b> after the restart, SideStore should open without an “untrusted
-                  developer” warning.</p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step-b"><span class="device-label">On your iPhone or iPad</span>
-                <h3>Finish SideStore setup</h3>
-                <p>Open LocalDevVPN and tap <b>Connect</b>. Then open SideStore, sign in with the same Apple Account you
-                  used in iloader, and open <b>My Apps</b>.</p>
-                <p>Tap the <b>7 DAYS</b> counter next to SideStore to refresh it once. If SideStore asks to create or
-                  revoke a signing certificate, choose <b>Yes</b> or <b>Refresh Now</b>.</p>
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
       </section>
 
-      <section class="sec" id="install-webink">
-        <div class="wrap">
-          <div class="sec-head"><span class="eyebrow">Phase 3 · Install Webink</span>
-            <h2>SideStore is ready. Now add Webink.</h2>
-            <p class="lede">You do not need to download an IPA file. SideStore reads the official Webink source and
-              downloads the right version for you.</p></div>
-          <div class="webink-install-card">
-            <div><span class="eyebrow">Recommended</span>
-              <h3>Add Webink to SideStore</h3>
-              <p>Tap this button on your iPhone or iPad. It opens SideStore and adds the official Webink source
-                automatically.</p></div>
-            <a class="btn" href="sidestore://source?url=https://buburo.com/webink/source.json">Add Webink to SideStore
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                <path d="M4 12L12 4M6 4h6v6"/>
-              </svg>
-            </a>
-          </div>
-          <div class="manual-source">
-            <h3>Didn&rsquo;t open automatically?</h3>
-            <ol>
-              <li>Open SideStore.</li>
-              <li>Open <b>Sources</b>, then tap <b>+</b> or <b>Add Source</b>.</li>
-              <li>Paste the URL below and confirm.</li>
-            </ol>
-            <div class="url-block">
-              <div class="code-label">Webink Source URL</div>
-              <div class="url-line"><code>https://buburo.com/webink/source.json</code>
-                <button class="copy-btn" type="button" data-copy="https://buburo.com/webink/source.json"
-                        aria-label="Copy Webink source URL">Copy
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="manual-source">
-            <h3>Install Webink from SideStore</h3>
-            <ol>
-              <li>You should now see <b>Webink</b> in SideStore.</li>
-              <li>Tap Webink, then tap <b>Install</b>.</li>
-              <li>Wait for SideStore to finish. Webink will appear on your Home Screen.</li>
-            </ol>
-            <div class="url-block">
-              <div class="code-label">What SideStore is doing:</div>
-              <div class="url-line">it reads Webink&rsquo;s metadata from the source URL,
-                finds the IPA listed there, and downloads it for you. You never need to find or type a GitHub download
-                link.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <!-- Post-install guidance stays visible outside the two setup tabs. -->
       <section class="sec">
         <div class="wrap">
-          <div class="sec-head"><span class="eyebrow">Phase 4 · Keep it working</span>
-            <h2>Refresh before the counter reaches zero</h2></div>
+          <div class="sec-head"><span class="eyebrow">Keep it working</span>
+            <h2>Refresh counter</h2></div>
           <div class="body-copy">
-            <p>With a free Apple Account, Webink is normally signed for seven days at a time.</p>
-            <p>You do not need your computer to renew it. After the initial SideStore setup, Webink can be refreshed
-              directly from your iPhone or iPad.</p>
-            <p>Before the counter reaches zero:</p>
+            <p>Apps installed through SideStore have a 7-day signing period. SideStore will try to refresh Webink
+              automatically before it expires, but automatic refresh is not guaranteed.</p>
+            <p>If the counter is close to zero, refresh Webink manually:</p>
             <ol class="refresh-steps">
               <li>Open LocalDevVPN and tap <b>Connect</b>.</li>
-              <li>Open SideStore.</li>
-              <li>Go to <b>My Apps</b>.</li>
-              <li>Tap the day counter next to Webink to refresh it.</li>
+              <li>Open SideStore, go to <b>My Apps</b>, and tap the counter next to Webink to refresh it.</li>
             </ol>
-            <p>SideStore may also refresh apps automatically in the background when the required conditions are
-              available.</p>
-            <p>If the counter reaches zero, Webink will stop opening until it is signed again. This does not
-              automatically delete Webink or your local data. Open SideStore and refresh Webink.</p>
-            <p>You only need your computer again if SideStore itself needs to be repaired or the device pairing needs to
-              be recreated.</p>
-            <p>A paid Apple Developer Account can change Apple&rsquo;s signing limits, but this guide assumes a free
-              Apple
-              Account.</p>
+            <p>If the counter reaches zero, Webink will stop opening until it is refreshed again.</p>
           </div>
         </div>
       </section>
 
       <section class="sec">
         <div class="wrap">
-          <div class="sec-head"><span class="eyebrow">Phase 5 · Updates</span>
+          <div class="sec-head"><span class="eyebrow">Updates</span>
             <h2>Updates appear in SideStore</h2></div>
           <div class="body-copy">
             <p>When a new Webink version is released, SideStore shows it as an update. Tap <b>Update</b> in SideStore
               and let it install the new version.</p>
-            <p>You do not need to download an IPA manually, and you do not need to add the source again. This URL stays
-              the same: <a href="https://buburo.com/webink/source.json"><b>Webink Source URL</b></a>.</p>
           </div>
         </div>
       </section>
 
       <section class="sec troubleshoot-sec">
         <div class="wrap">
-          <div class="sec-head"><span class="eyebrow">Phase 6 · Troubleshooting</span>
+          <div class="sec-head"><span class="eyebrow">Troubleshooting</span>
             <h2>When something gets stuck</h2>
-            <p class="lede">Try the short fix first. Open the official SideStore guide for anything more advanced.</p>
+            <p class="lede">Try the short fix first. Or open the official SideStore guide for anything more
+              advanced.</p>
           </div>
           <div class="faq-list">
             <details class="faq-item">
@@ -381,8 +374,19 @@
       </section>
     </div>
 
-    <!-- ============ macOS ============ -->
+    <!-- Mac guide. This is selected by the #macos URL hash. -->
     <div class="plat-macos">
+      <section class="sec">
+        <div class="wrap">
+          <div class="sec-head"><span class="eyebrow">Before you start</span>
+            <h2>What you need</h2></div>
+          <div class="reqs">
+            <div class="req"><b>A Mac</b><span>macOS 10.15 Catalina or later. Apple Silicon and Intel.</span></div>
+            <div class="req"><b>Admin access</b><span>Needed once, to allow the app on first launch.</span></div>
+            <div class="req"><b>Nothing else</b><span>No Apple ID, no VPN, no refreshing.</span></div>
+          </div>
+        </div>
+      </section>
 
       <section class="sec" data-os="mac">
         <div class="wrap">
@@ -399,18 +403,7 @@
         </div>
       </section>
 
-      <section class="sec">
-        <div class="wrap">
-          <div class="sec-head"><span class="eyebrow">Before you start</span>
-            <h2>What you need</h2></div>
-          <div class="reqs">
-            <div class="req"><b>A Mac</b><span>macOS 10.15 Catalina or later. Apple Silicon and Intel.</span></div>
-            <div class="req"><b>Admin access</b><span>Needed once, to allow the app on first launch.</span></div>
-            <div class="req"><b>Nothing else</b><span>No Apple ID, no VPN, no refreshing.</span></div>
-          </div>
-        </div>
-      </section>
-
+      <!-- Download the DMG and explain the one-time macOS Gatekeeper approval. -->
       <section class="sec">
         <div class="wrap">
           <div class="sec-head"><span class="eyebrow">Setup</span>

@@ -275,6 +275,34 @@
     setPlatform(location.hash.replace('#', ''), false);
   }
 
+  /* ---- iPhone/iPad guide: switch between SideStore setup and Webink install ---- */
+  const installGuide = document.getElementById('installGuide');
+  const installGuideTabs = document.getElementById('installGuideTabs');
+
+  if (installGuide && installGuideTabs) {
+    const INSTALL_STEPS = ['sidestore', 'webink'];
+
+    function setInstallStep(step) {
+      if (INSTALL_STEPS.indexOf(step) === -1) return;
+
+      installGuide.dataset.activeStep = step;
+
+      installGuideTabs.querySelectorAll('[data-install-step]').forEach(function (button) {
+        button.setAttribute('aria-pressed', String(button.dataset.installStep === step));
+      });
+    }
+
+    installGuideTabs.addEventListener('click', function (e) {
+      const button = e.target.closest('[data-install-step]');
+      if (!button) return;
+
+      setInstallStep(button.dataset.installStep);
+    });
+
+    /* Keep the first-time SideStore setup as the default panel. */
+    setInstallStep('sidestore');
+  }
+
   /* ---- install page: OS tabs ---- */
   const ostabs = document.getElementById('ostabs');
 
