@@ -4,23 +4,26 @@
   "subtitle": "Apps by Buburo",
   "description": "Source for Webink and other apps by Buburo.",
   "website": "https://buburo.com",
-  "iconURL": "https://buburo.com/src/img/brand.png",
+  "iconURL": "https://buburo.com/img/brand.png",
   "tintColor": "0F9E90",
   "apps": [
     {
       "name": "Webink",
       "bundleIdentifier": "com.buburo.webink",
       "developerName": "Buburo",
-      "subtitle": "One library across eleven manga sources",
-      "localizedDescription": "Eleven manga sites, one library.\n\nWebink aggregates manga sources behind a single interface and keeps your place. Trending and latest releases on the home screen, search scoped to a source or to your own library, and a shelf where every title carries a status, a ranking and a chapter position.\n\nProgress is stored on device and syncs to the cloud once you sign in, so a new phone picks up where the old one stopped. Sign-in is optional — the app is fully usable without an account.\n\nWebink hosts nothing. It is an interface onto content the sources already publish.",
-      "iconURL": "https://buburo.com/src/img/webink_white.png",
+      "subtitle": "Discover, read, and sync manga across devices",
+      "localizedDescription": "Webink is a manga reading app designed for manga enthusiasts to discover, read, and organize their favorite titles from multiple sources. Stay updated with the latest releases and trending manga directly on the home page. The app offers a powerful search feature, allowing users to search for manga across different sources or within their own saved library.\n\nSave your favorite manga to your library and track your reading progress easily. For users who prefer to sync their library across devices, Webink provides seamless integration with Google, allowing library synchronisation.",
+      "iconURL": "https://buburo.com/img/webink/webink_white.png",
       "tintColor": "0F9E90",
       "category": "entertainment",
       "screenshots": [
-        "https://buburo.com/img/webink-1.webp",
-        "https://buburo.com/img/webink-2.webp",
-        "https://buburo.com/img/webink-3.webp",
-        "https://buburo.com/img/webink-4.webp"
+        "https://buburo.com/img/webink/screenshots/webink-home-discovery.png",
+        "https://buburo.com/img/webink/screenshots/webink-trending-releases.png",
+        "https://buburo.com/img/webink/screenshots/webink-manga-search.png",
+        "https://buburo.com/img/webink/screenshots/webink-library.png",
+        "https://buburo.com/img/webink/screenshots/webink-library-sync.png",
+        "https://buburo.com/img/webink/screenshots/webink-reading-progress.png",
+        "https://buburo.com/img/webink/screenshots/webink-chapter-tracking.png"
       ],
       "appPermissions": {
         "entitlements": [],
@@ -28,8 +31,17 @@
           "NSUserTrackingUsageDescription": "Used to measure how the app is performing."
         }
       },
-      "downloadURL": "https://github.com/buburod/webink-releases/releases/download/20260901/Webink-1.2.2-114.ipa",
+      "downloadURL": "https://github.com/buburod/webink-releases/releases/download/20261010/Webink-1.2.3-115.ipa",
       "versions": [
+        {
+          "version": "1.2.3",
+          "buildVersion": "115",
+          "date": "2026-10-11",
+          "localizedDescription": "Fixed homepage requests for MangaLivre\nRemoved the deprecated LerMangas source\nAdded Império da Britannia and MangasTop\nImproved AsuraScans, MangaDex, remote configuration, Sign in with Apple, and caching\nOther minor fixes and improvements",
+          "downloadURL": "https://github.com/buburod/webink-releases/releases/download/20261010/Webink-1.2.3-115.ipa",
+          "size": 34860145,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.2.2",
           "buildVersion": "114",

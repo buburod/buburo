@@ -9,8 +9,8 @@
   <link rel="canonical" href="https://buburo.com/webink/">
   <meta name="theme-color" content="#C6F921" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0A1917" media="(prefers-color-scheme: dark)">
-  <link rel="icon" href="/src/img/brand.png">
-  <link rel="apple-touch-icon" href="/src/img/brand.png">
+  <link rel="icon" href="/img/brand.png">
+  <link rel="apple-touch-icon" href="/img/brand.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="BuBu-ro">
   <meta property="og:locale" content="en_GB">
@@ -39,10 +39,15 @@
     "name": "Webink",
     "applicationCategory": "EntertainmentApplication",
     "operatingSystem": "iOS, Android, macOS",
-    "softwareVersion": "1.2.2",
+    "softwareVersion": "1.2.3",
     "url": "https://buburo.com/webink/",
-    "description": "A manga reader that pulls from eleven sources and makes them feel like one library.",
-    "image": "https://buburo.com/img/webink-1.webp",
+    "description": "Webink helps manga readers discover, read, and organize titles from multiple sources. Explore trending releases, search across sources or your saved library, track reading progress, and sync your library across devices with Google.",
+    "image": [
+      "https://buburo.com/img/webink/screenshots/webink-1.webp",
+      "https://buburo.com/img/webink/screenshots/webink-2.webp",
+      "https://buburo.com/img/webink/screenshots/webink-3.webp",
+      "https://buburo.com/img/webink/screenshots/webink-4.webp"
+    ],
     "author": {
       "@type": "Person",
       "name": "Bruno Rodrigues",
@@ -59,7 +64,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <header>
   <nav class="nav">
-    <a class="nav-brand" href="/" aria-label="Buburo — home"><img src="/src/img/brand.png" alt="Buburo" width="36"
+    <a class="nav-brand" href="/" aria-label="Buburo — home"><img src="/img/brand.png" alt="Buburo" width="36"
                                                                   height="36"></a>
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
     <div class="nav-links" id="navLinks"><a href="/">Home</a><a href="/work/" aria-current="page">Work</a><a
@@ -69,7 +74,7 @@
 
 <main id="main" class="cs-page">
   <div class="wrap cs-head">
-    <div class="cs-id"><img src="/src/img/webink_white.png" alt="" width="58" height="58">
+    <div class="cs-id"><img src="/img/webink/webink_white.png" alt="" width="58" height="58">
       <div style="display:flex;flex-direction:column;gap:4px">
         <h1>Webink</h1><span class="eyebrow">Manga reader &middot; designed &amp; built solo</span></div>
     </div>
@@ -90,7 +95,7 @@
       </div>
       <div>
         <dt>Version</dt>
-        <dd>1.2.2 (114)</dd>
+        <dd>1.2.3 (115)</dd>
       </div>
       <div>
         <dt>Team</dt>
@@ -108,16 +113,16 @@
       <div class="car-bleed">
         <div class="car-wrap">
           <div class="car-track" id="carTrack">
-            <div class="car-slide active"><img src="/img/webink-1.webp"
+            <div class="car-slide active"><img src="/img/webink/screenshots/webink-1.webp"
                                                alt="Webink on macOS &mdash; Home &mdash; featured title, latest releases and trending"
                                                width="1280" height="800" decoding="async"></div>
-            <div class="car-slide"><img src="/img/webink-2.webp"
+            <div class="car-slide"><img src="/img/webink/screenshots/webink-2.webp"
                                         alt="Webink on macOS &mdash; Title detail with the chapter list, and a chapter open in the reader"
                                         width="1280" height="800" decoding="async"></div>
-            <div class="car-slide"><img src="/img/webink-3.webp"
+            <div class="car-slide"><img src="/img/webink/screenshots/webink-3.webp"
                                         alt="Webink on macOS &mdash; Choosing a source, and the trending grid"
                                         width="1280" height="800" decoding="async"></div>
-            <div class="car-slide"><img src="/img/webink-4.webp"
+            <div class="car-slide"><img src="/img/webink/screenshots/webink-4.webp"
                                         alt="Webink on macOS &mdash; Library and search by category" width="1280"
                                         height="800" decoding="async"></div>
           </div>
@@ -168,39 +173,53 @@
           rate limits &mdash; the app normalises all of it into one interface.</p></div>
       <ul class="src-grid">
         <li class="src"><span class="src-name">AsuraScans</span>
-          <img class="src-logo" src="/img/sources/asurascans.png" alt="" width="240" height="240" loading="lazy">
-          <img class="src-flag" src="/img/flags/english.svg" alt="English" width="20" height="14" loading="lazy"></li>
+          <img class="src-logo" src="/img/webink/sources/asurascans.png" alt="" width="240" height="240" loading="lazy">
+          <img class="src-flag" src="/img/webink/flags/english.svg" alt="English" width="20" height="14" loading="lazy">
+        </li>
         <li class="src"><span class="src-name">Mangabuddy</span>
-          <img class="src-logo" src="/img/sources/mangabuddy.png" alt="" width="240" height="240" loading="lazy">
-          <img class="src-flag" src="/img/flags/english.svg" alt="English" width="20" height="14" loading="lazy"></li>
+          <img class="src-logo" src="/img/webink/sources/mangabuddy.png" alt="" width="240" height="240" loading="lazy">
+          <img class="src-flag" src="/img/webink/flags/english.svg" alt="English" width="20" height="14" loading="lazy">
+        </li>
         <li class="src"><span class="src-name">MangaDex</span>
-          <img class="src-logo" src="/img/sources/mangadex.png" alt="" width="240" height="240" loading="lazy">
-          <img class="src-flag" src="/img/flags/english.svg" alt="English" width="20" height="14" loading="lazy"></li>
+          <img class="src-logo" src="/img/webink/sources/mangadex.png" alt="" width="240" height="240" loading="lazy">
+          <img class="src-flag" src="/img/webink/flags/english.svg" alt="English" width="20" height="14" loading="lazy">
+        </li>
         <li class="src"><span class="src-name">Demonicscans</span>
-          <img class="src-logo" src="/img/sources/demonicscans.png" alt="" width="240" height="240" loading="lazy">
-          <img class="src-flag" src="/img/flags/english.svg" alt="English" width="20" height="14" loading="lazy"></li>
+          <img class="src-logo" src="/img/webink/sources/demonicscans.png" alt="" width="240" height="240"
+               loading="lazy">
+          <img class="src-flag" src="/img/webink/flags/english.svg" alt="English" width="20" height="14" loading="lazy">
+        </li>
         <li class="src"><span class="src-name">Mangakakalot</span>
-          <img class="src-logo" src="/img/sources/mangakakalot.png" alt="" width="240" height="240" loading="lazy">
-          <img class="src-flag" src="/img/flags/english.svg" alt="English" width="20" height="14" loading="lazy"></li>
+          <img class="src-logo" src="/img/webink/sources/mangakakalot.png" alt="" width="240" height="240"
+               loading="lazy">
+          <img class="src-flag" src="/img/webink/flags/english.svg" alt="English" width="20" height="14" loading="lazy">
+        </li>
         <li class="src"><span class="src-name">SkyMangas</span>
-          <img class="src-logo" src="/img/sources/skymangas.png" alt="" width="240" height="240" loading="lazy">
-          <img class="src-flag" src="/img/flags/spanish.svg" alt="Spanish" width="20" height="14" loading="lazy"></li>
+          <img class="src-logo" src="/img/webink/sources/skymangas.png" alt="" width="240" height="240" loading="lazy">
+          <img class="src-flag" src="/img/webink/flags/spanish.svg" alt="Spanish" width="20" height="14" loading="lazy">
+        </li>
         <li class="src"><span class="src-name">Mhscans</span>
-          <img class="src-logo" src="/img/sources/mhscans.png" alt="" width="240" height="240" loading="lazy">
-          <img class="src-flag" src="/img/flags/spanish.svg" alt="Spanish" width="20" height="14" loading="lazy"></li>
+          <img class="src-logo" src="/img/webink/sources/mhscans.png" alt="" width="240" height="240" loading="lazy">
+          <img class="src-flag" src="/img/webink/flags/spanish.svg" alt="Spanish" width="20" height="14" loading="lazy">
+        </li>
         <li class="src"><span class="src-name">Lelmanga</span>
-          <img class="src-logo" src="/img/sources/lelmanga.png" alt="" width="240" height="240" loading="lazy">
-          <img class="src-flag" src="/img/flags/french.svg" alt="French" width="20" height="14" loading="lazy"></li>
+          <img class="src-logo" src="/img/webink/sources/lelmanga.png" alt="" width="240" height="240" loading="lazy">
+          <img class="src-flag" src="/img/webink/flags/french.svg" alt="French" width="20" height="14" loading="lazy">
+        </li>
         <li class="src"><span class="src-name">PoseidonScans</span>
-          <img class="src-logo" src="/img/sources/poseidonscans.png" alt="" width="240" height="240" loading="lazy">
-          <img class="src-flag" src="/img/flags/french.svg" alt="French" width="20" height="14" loading="lazy"></li>
+          <img class="src-logo" src="/img/webink/sources/poseidonscans.png" alt="" width="240" height="240"
+               loading="lazy">
+          <img class="src-flag" src="/img/webink/flags/french.svg" alt="French" width="20" height="14" loading="lazy">
+        </li>
         <li class="src"><span class="src-name">Mangalivre</span>
-          <img class="src-logo" src="/img/sources/mangalivre.png" alt="" width="240" height="240" loading="lazy">
-          <img class="src-flag" src="/img/flags/portuguese.svg" alt="Portuguese" width="20" height="14" loading="lazy">
+          <img class="src-logo" src="/img/webink/sources/mangalivre.png" alt="" width="240" height="240" loading="lazy">
+          <img class="src-flag" src="/img/webink/flags/portuguese.svg" alt="Portuguese" width="20" height="14"
+               loading="lazy">
         </li>
         <li class="src"><span class="src-name">LerMangas</span>
-          <img class="src-logo" src="/img/sources/lermangas.png" alt="" width="240" height="240" loading="lazy">
-          <img class="src-flag" src="/img/flags/portuguese.svg" alt="Portuguese" width="20" height="14" loading="lazy">
+          <img class="src-logo" src="/img/webink/sources/lermangas.png" alt="" width="240" height="240" loading="lazy">
+          <img class="src-flag" src="/img/webink/flags/portuguese.svg" alt="Portuguese" width="20" height="14"
+               loading="lazy">
         </li>
       </ul>
     </div>
@@ -278,7 +297,7 @@
       <div>
         <div class="rel">
           <time datetime="2026-09-07">07 Sep 2026</time>
-          <img class="rel-logo" src="/img/sidestore.png" alt="" width="38" height="38">
+          <img class="rel-logo" src="/img/webink/sidestore.png" alt="" width="38" height="38">
           <div><b>iOS &mdash; SideStore</b><span class="sub">Removed from the App Store. Installed as a signed IPA through SideStore.</span>
           </div>
           <div class="act"><a class="storelink" href="/webink/install/">Install guide
@@ -290,7 +309,7 @@
 
         <div class="rel">
           <time datetime="2026-09-07">07 Sep 2026</time>
-          <img class="rel-logo" src="/src/img/apple_store.png" alt="" width="38" height="38">
+          <img class="rel-logo" src="/img/webink/apple_store.png" alt="" width="38" height="38">
           <div><b>macOS &mdash; direct download</b><span class="sub">Also removed from the App Store. Downloaded as a signed .dmg.</span>
           </div>
           <div class="act"><a class="storelink" href="/webink/install/#macos">Install guide
@@ -302,15 +321,15 @@
 
         <div class="rel">
           <time>Current</time>
-          <img class="rel-logo" src="/src/img/webink_white.png" alt="" width="38" height="38">
-          <div><b>1.2.2 (build 114)</b><span
+          <img class="rel-logo" src="/img/webink/webink_white.png" alt="" width="38" height="38">
+          <div><b>1.2.3 (build 115)</b><span
               class="sub">11 sources &middot; Riverpod 3 &middot; Rust image pipeline</span></div>
           <div class="act"><span class="pill lime">Live</span></div>
         </div>
 
         <div class="rel">
           <time datetime="2024-09-12">12 Sep 2024</time>
-          <img class="rel-logo" src="/src/img/android_store.png" alt="" width="38" height="38">
+          <img class="rel-logo" src="/img/webink/android_store.png" alt="" width="38" height="38">
           <div><b>Android &mdash; Google Play</b><span class="sub">Still published and updated on Google Play.</span>
           </div>
           <div class="act"><a class="storelink" href="https://play.google.com/store/apps/details?id=com.buburo.webink"
@@ -323,7 +342,7 @@
 
         <div class="rel gone">
           <time datetime="2024-09-12">12 Sep 2024</time>
-          <img class="rel-logo" src="/src/img/apple_store.png" alt="" width="38" height="38">
+          <img class="rel-logo" src="/img/webink/apple_store.png" alt="" width="38" height="38">
           <div><b>iOS &amp; macOS &mdash; App Store</b><span class="sub">Where it launched. Both moved off the App Store in Sep 2026.</span>
           </div>
           <div class="act"><span class="pill">Ended</span></div>
@@ -366,7 +385,7 @@
 <footer class="foot">
   <div class="wrap foot-in">
     <div class="foot-brand">
-      <img src="/src/img/brand.png" alt="" width="36" height="36">
+      <img src="/img/brand.png" alt="" width="36" height="36">
       <small>&copy; 2026 BUBURO. ALL RIGHTS RESERVED</small>
     </div>
     <div class="foot-links">

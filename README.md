@@ -21,9 +21,8 @@ points at some of them. Do not delete.
 
 - `css/main.css` — one stylesheet, design tokens at the top, light + dark.
 - `js/site.js` — mobile menu, work filter, install OS tabs, carousel.
-- `img/` — artwork for the current site.
-- `src/img/` — shared images kept from the previous site (brand, hero lines, store badges, Webink icon). Still
-  referenced.
+- `img/` — site-wide artwork, Buburo branding, and other project cards.
+- `img/webink/` — Webink branding, screenshots, source logos, flags, and download badges.
 
 Paths are absolute from the site root, so preview through a server:
 
@@ -34,7 +33,7 @@ Paths are absolute from the site root, so preview through a server:
 
 These are static text in the HTML — nothing fetches them:
 
-- **Webink version** (`webink/index.html`, the meta table) — currently `1.2.2 (114)`. Update when you release.
+- **Webink version** (`webink/index.html`, the meta table) — currently `1.2.3 (115)`. Update when you release.
 - **Language line counts** (`webink/index.html`, the Languages section) — Dart 34,914 / Rust 186 / JS 165 / Swift+Kotlin
   104, plus the bar percentages. Recount with `git ls-files '*.dart' | xargs wc -l` in the webink repo.
 
