@@ -34,6 +34,15 @@
       "downloadURL": "https://github.com/buburod/webink-releases/releases/download/20261010/Webink-1.2.3-115.ipa",
       "versions": [
         {
+          "version": "1.2.4",
+          "buildVersion": "117",
+          "date": "2026-10-29",
+          "localizedDescription": "Fixed blocked chapters in AsuraScans\nFixed manga data and requests in LelManga\nFixed MangaKakalot base URL\nFixed chapter pagination in MangaLivre\nFixed image loading in PoseidonScans\nAdded French RimuScans source\nFixed library cloud sync and improved loading\nFixed macOS login\nFixed chapter read status\nFixed FlareProxy requests and error handling\nFixed remote config loading\nUpdated Firebase dependencies"
+          "downloadURL": "https://github.com/buburod/webink-releases/releases/download/20261029/Webink-1.2.4-117.ipa",
+          "size": 35181244,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "1.2.3",
           "buildVersion": "115",
           "date": "2026-10-11",
